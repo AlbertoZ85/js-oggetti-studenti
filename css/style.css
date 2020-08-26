@@ -1,0 +1,20 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.form {
+    text-align: center;
+}
+
+input {
+    margin-right: 20px;
+}
+
+#output {
+    padding: 20px;
+}

@@ -1,16 +1,44 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js" integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw==" crossorigin="anonymous"></script>
-        <title>Oggetti studenti</title>
-    </head>
-    <body>
 
-         <script src="js/script.js" charset="utf-8"></script>
-    </body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"
+        integrity="sha512-zT3zHcFYbQwjHdKjCu6OMmETx8fJA9S7E6W7kBeFxultf75OPTYUJigEKX58qgyQMi1m1EgenfjMXlRZG8BXaw=="
+        crossorigin="anonymous"></script>
+    <title>Oggetti studenti</title>
+</head>
+
+<body>
+    <h1>Oggetti Studenti</h1>
+
+    <div class="form">
+        <label for="name">Nome:</label>
+        <input id="name" type="text" placeholder="Inserisci nome" required>
+
+        <label for="surname">Cognome:</label>
+        <input id="surname" type="text" placeholder="Inserisci cognome" required>
+
+        <label for="age">Età:</label>
+        <input id="age" type="text" placeholder="Inserisci età" required>
+
+        <button id="enter">Invia</button>
+    </div>
+
+    <div id="output"></div>
+
+    <script id="entry-template" type="text/x-handlebars-template">
+        <h4>Nome: {{nome}}</h4>
+        <h4>Cognome: {{cognome}}</h4>
+        <h4>Età: {{eta}} anni</h4>
+        <br>
+    </script>
+
+    <script src="js/script.js" charset="utf-8"></script>
+</body>
+
 </html>
