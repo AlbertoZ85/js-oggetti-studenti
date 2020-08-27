@@ -1,20 +1,29 @@
 body {
-    background-color: lightblue;
+    background-color: rgb(240, 240, 150);
 }
 
-h1 {
-    text-align: center;
-    color: whitesmoke;
-}
-
+h1,
 .form {
     text-align: center;
 }
 
-input {
+input,
+select {
     margin-right: 20px;
+}
+
+select option:first-of-type {
+    display: none;
 }
 
 #output {
     padding: 20px;
+}
+
+.m {
+    background-color: lightblue;
+}
+
+.f {
+    background-color: pink;
 }

@@ -26,15 +26,26 @@
         <label for="age">Età:</label>
         <input id="age" type="text" placeholder="Inserisci età" required>
 
+        <label for="sex">Sesso:</label>
+        <select id="sex" required>
+            <option>Scegli...</option>
+            <option value="m">M</option>
+            <option value="f">F</option>
+        </select>
+
         <button id="enter">Invia</button>
     </div>
 
     <div id="output"></div>
 
     <script id="entry-template" type="text/x-handlebars-template">
-        <h4>Nome: {{nome}}</h4>
-        <h4>Cognome: {{cognome}}</h4>
-        <h4>Età: {{eta}} anni</h4>
+        <div class="{{sesso}}">
+            <h4>Nome: {{nome}}</h4>
+            <h4>Cognome: {{cognome}}</h4>
+            <div class="body">
+                <span>Età: {{eta}} anni</span>
+            </div>
+        </div>
         <br>
     </script>
 
